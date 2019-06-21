@@ -1,0 +1,6 @@
+  <button nz-button nzType="primary" (click)="toUp()">upLoad</button>
+
+  <form method="post" (change)="upLoad()" enctype="multipart/form-data">
+    <input type="file" id="file" multiple="multiple" hidden>
+    <nz-progress [nzPercent]="size"></nz-progress>
+  </form>
